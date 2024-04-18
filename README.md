@@ -1,2 +1,3 @@
 # Biblioteca_Central
-Sistema para uma biblioteca
+Este projeto envolve o desenvolvimento de um microserviço em C#
+para gerenciar uma biblioteca.

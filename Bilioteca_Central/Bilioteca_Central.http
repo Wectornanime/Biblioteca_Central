@@ -1,0 +1,27 @@
+@Bilioteca_Central_HostAddress = https://localhost:7296
+
+GET {{Bilioteca_Central_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Bilioteca_Central_HostAddress}}/weatherforecast
+
+###
+
+GET {{Bilioteca_Central_HostAddress}}/api/biblioteca_
+
+###
+
+GET {{Bilioteca_Central_HostAddress}}/api/biblioteca_
+
+###
+
+POST {{Bilioteca_Central_HostAddress}}/api/biblioteca_
+Content-Type: application/json
+
+{
+  //Livro
+}
+
+###

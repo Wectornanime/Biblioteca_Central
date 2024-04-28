@@ -29,7 +29,7 @@ namespace Bilioteca_Central.Controllers
             var user = await _context.Usuarios.FindAsync(id);
             if (user == null)
             {
-                return BadRequest();
+                return BadRequest("User not found");
             }
             return Ok(user);
         }

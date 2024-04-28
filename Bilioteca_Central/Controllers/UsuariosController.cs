@@ -60,5 +60,19 @@ namespace Bilioteca_Central.Controllers
 
             return Ok(await _context.Usuarios.ToListAsync());
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Usuario>>> DeleteUser(int id)
+        {
+            var user = await _context.Usuarios.FindAsync(id);
+            if (user == null)
+            {
+                return BadRequest("User not found");
+            }
+            _context.Usuarios.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.Usuarios.ToListAsync());
+        }
     }
 }
